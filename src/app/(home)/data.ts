@@ -33,12 +33,7 @@ export const ecosystemBrands = [
   { icon: Radio, name: "Santu Media", description: "Chaîne média et documentaires courts. Récits percutants et visuels.", site: "media.santu.io" },
 ];
 
-export const navLinks = [
-  { label: "Expertises", href: "#expertises" },
-  { label: "Processus", href: "#processus" },
-  { label: "Notre approche", href: "#approche" },
-  { label: "Contact", href: "#contact" },
-];
+
 
 // Hero
 export const hero = {
@@ -48,43 +43,7 @@ export const hero = {
     "Nous accompagnons entreprises, institutions et startups dans leurs projets numériques : cloud, développement, conseil et formation. Une équipe à l’écoute, des méthodologies éprouvées.",
 };
 
-export const expertises = [
-  {
-    icon: Cloud,
-    title: "Cloud & DevOps",
-    line: "Infra, CI/CD, Kubernetes.",
-    description:
-      "Infrastructure cloud (AWS, GCP, Azure), pipelines CI/CD et conteneurisation. Déploiements fiables, scalables et sécurisés.",
-  },
-  {
-    icon: Smartphone,
-    title: "Web & Mobile",
-    line: "Apps modernes, React, iOS/Android.",
-    description:
-      "Applications web et mobiles : React, Next.js, Node, iOS et Android. Interfaces performantes et expériences utilisateur soignées.",
-  },
-  {
-    icon: Briefcase,
-    title: "Conseil",
-    line: "Audit, roadmap, architecture.",
-    description:
-      "Accompagnement stratégique et technique : audit, roadmap, choix d’architecture et alignement technologie / métier.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Formation",
-    line: "Montée en compétences, transfert.",
-    description:
-      "Formations sur mesure et transfert de compétences : cloud, DevOps, développement, agile. Pour rendre vos équipes autonomes.",
-  },
-  {
-    icon: Puzzle,
-    title: "Sur mesure",
-    line: "APIs, portails, intégrations.",
-    description:
-      "Solutions adaptées à vos processus : portails, APIs, intégrations métier. Conception, développement et déploiement.",
-  },
-];
+
 
 export const expertisesIntro =
   "Nous couvrons l’ensemble du spectre technique dont vous avez besoin : de l’infrastructure à l’application, du conseil à la formation. Chaque mission est adaptée à votre contexte.";
@@ -95,7 +54,7 @@ export const expertiseHighlights = [
   { icon: Smartphone, title: "Web & Mobile", description: "Applications web et mobiles modernes. React, Next.js, iOS et Android pour vos projets digitaux." },
   { icon: Briefcase, title: "Conseil & Consulting", description: "Audit, roadmap et architecture. Alignement de la technologie avec vos objectifs métier." },
   { icon: GraduationCap, title: "Formation & Accompagnement", description: "Montée en compétences et transfert de savoir-faire. Cloud, DevOps, développement, agile." },
-  { icon: Puzzle, title: "Solutions sur mesure", description: "Portails, APIs, intégrations. Conception et déploiement adaptés à vos processus." },
+  // { icon: Puzzle, title: "Solutions sur mesure", description: "Portails, APIs, intégrations. Conception et déploiement adaptés à vos processus." },
 ];
 
 // Technologies et compétences (grille 3x3)
@@ -174,33 +133,33 @@ export const trustedIntro = "Nous intervenons auprès d’entreprises, d’insti
 
 export const enterpriseFeatures = [
   {
-    icon: Lock,
-    title: "Sécurité & conformité",
-    description: "Accompagnement RGPD, sécurité applicative et bonnes pratiques. Pour des systèmes fiables et conformes.",
-  },
-  {
-    icon: Building2,
-    title: "Équipes dédiées",
-    description: "Mise à disposition d’équipes stables et qualifiées, intégrées à vos processus et à votre culture.",
-  },
-  {
-    icon: Headphones,
-    title: "Support & SAV",
-    description: "Maintenance, évolution et support technique. Pour garantir la continuité et l’évolution de vos systèmes.",
-  },
-  {
     icon: FileCode,
-    title: "Audit & refonte",
-    description: "Audit de l’existant, modernisation du patrimoine applicatif et migration vers des architectures modernes.",
+    title: "Développeurs",
+    description: "Web, mobile, cloud — on place des devs opérationnels qui montent en prod avec vous, pas juste sur le papier.",
+  },
+  {
+    icon: Briefcase,
+    title: "Consultants",
+    description: "Un regard neuf sur vos choix techniques. Nos consultants vous aident à cadrer, arbitrer et avancer plus vite.",
+  },
+  {
+    icon: Zap,
+    title: "Flexibilité",
+    description: "Une semaine, six mois, à temps plein ou partiel. Le format s’adapte à vous, pas l’inverse.",
+  },
+  {
+    icon: Users,
+    title: "Intégration",
+    description: "Nos profils travaillent avec votre équipe, dans vos outils et vos rituels. Zéro friction, zéro boîte noire.",
   },
 ];
 
 export const enterpriseIntro =
-  "Pour les organisations qui ont besoin de réponses structurées : sécurité, équipes dédiées, support et modernisation du patrimoine.";
+  "Besoin d'un développeur ou d'un consultant ? On intègre des profils qualifiés directement dans votre équipe, le temps qu'il faut.";
 
 export const cta = {
-  title: "Un projet technologique ?",
-  text: "Discutons de vos besoins et trouvons ensemble la solution adaptée.",
+  title: "Un projet ?",
+  text: "Discutons de votre projet et trouvons ensemble la solution adaptée.",
 };
 
 /** Presets pour le composant CallToAction (bouton formulaire = page avec id "formulaire") */
@@ -212,27 +171,10 @@ export const ctaButtonPresets = {
   describeProject: { label: "Décrire mon projet", href: "#formulaire", variant: "secondary" as const },
 };
 
-export const footerSections = [
-  {
-    title: "Solutions",
-    links: [
-      { label: "Expertises", href: "#expertises" },
-      { label: "Processus", href: "#processus" },
-      { label: "Notre approche", href: "#approche" },
-    ],
-  },
-  {
-    title: "Contact",
-    links: [
-      { label: "Nous contacter", href: "mailto:contact@santu-solutions.com" },
-      { label: "LinkedIn", href: "https://linkedin.com/company/santu-solutions" },
-    ],
-  },
-];
 
-export const footerTagline = "Solutions technologiques pour entreprises et institutions.";
+export const footerTagline = "Faites-vous accompagner par des experts";
 
 export const footerLinks = [
-  { label: "Contact", href: "mailto:contact@santu-solutions.com", icon: Mail },
-  { label: "LinkedIn", href: "https://linkedin.com/company/santu-solutions", icon: Linkedin },
+  { label: "Contact", href: "mailto:contact@santu-engineering.com", icon: Mail },
+  { label: "LinkedIn", href: "https://linkedin.com/company/santu-engineering", icon: Linkedin },
 ];

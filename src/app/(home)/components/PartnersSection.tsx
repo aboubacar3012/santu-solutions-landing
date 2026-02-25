@@ -3,14 +3,21 @@
 import { motion } from "framer-motion";
 
 const partners = [
-  { name: "Entreprises" },
-  { name: "Institutions" },
-  { name: "Startups" },
-  { name: "ETI & PME" },
-  { name: "Secteur public" },
-  { name: "Scale-ups" },
-  { name: "Grandes entreprises" },
-  { name: "PME innovantes" },
+  { name: "Adverco" },
+  { name: "Nojyk" },
+  { name: "13UP Media Group" },
+  { name: "TeedUp" },
+  { name: "Les Determinés" },
+  { name: "Adverco" },
+  { name: "Nojyk" },
+  { name: "13UP Media Group" },
+  { name: "TeedUp" },
+  { name: "Les Determinés" },
+  { name: "Adverco" },
+  { name: "Nojyk" },
+  { name: "13UP Media Group" },
+  { name: "TeedUp" },
+  { name: "Les Determinés" },
 ];
 
 export default function PartnersSection() {

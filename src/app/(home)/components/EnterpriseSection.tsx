@@ -23,7 +23,7 @@ export default function EnterpriseSection() {
             viewport={{ once: true }}
             className="text-xs font-medium text-neutral-500 uppercase tracking-[0.2em] mb-3"
           >
-            Pour l&apos;entreprise
+            Renforcez votre équipe
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 12 }}
@@ -32,7 +32,7 @@ export default function EnterpriseSection() {
             transition={{ delay: 0.04 }}
             className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-4"
           >
-            Réponses structurées pour les organisations
+            Les bons profils, au bon moment
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 12 }}

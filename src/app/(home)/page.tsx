@@ -10,12 +10,16 @@ import EnterpriseSection from "@/app/(home)/components/EnterpriseSection";
 import EcosystemSection from "@/app/(home)/components/EcosystemSection";
 import CTASection from "@/app/(home)/components/CTASection";
 import Footer from "@/app/(home)/components/Footer";
+import ContactModal from "@/app/(home)/components/ContactModal";
+import { ContactModalProvider } from "@/app/(home)/components/ContactModalContext";
 import { cta, ctaButtonPresets } from "./data";
 
 export default function HomePage() {
   return (
+    <ContactModalProvider>
     <div className="min-h-screen bg-white text-neutral-900">
       <Header />
+      <ContactModal />
 
       {/* Hero Section */}
       <HeroSection />
@@ -36,7 +40,7 @@ export default function HomePage() {
       <EnterpriseSection />
 
       {/* Notre écosystème (marques) */}
-      <EcosystemSection />
+      {/* <EcosystemSection /> */}
 
       <CTASection
         title={cta.title}
@@ -47,5 +51,6 @@ export default function HomePage() {
 
       <Footer />
     </div>
+    </ContactModalProvider>
   );
 }

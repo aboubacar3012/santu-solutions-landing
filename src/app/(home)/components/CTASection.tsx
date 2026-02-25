@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useContactModal } from "./ContactModalContext";
 
 type CTASectionProps = {
   title: string;
@@ -10,7 +11,8 @@ type CTASectionProps = {
   buttonHref: string;
 };
 
-export default function CTASection({ title, subtitle, buttonLabel, buttonHref }: CTASectionProps) {
+export default function CTASection({ title, subtitle, buttonLabel }: CTASectionProps) {
+  const { open } = useContactModal();
   return (
     <section id="contact" className="relative py-24 sm:py-32 px-8 sm:px-12 bg-neutral-950 border-t border-neutral-800 overflow-hidden">
       {/* Fond : grille subtile + dégradé */}
@@ -44,13 +46,14 @@ export default function CTASection({ title, subtitle, buttonLabel, buttonHref }:
           <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-xl mx-auto mb-10">
             {subtitle}
           </p>
-          <a
-            href={buttonHref}
-            className="group inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-8 py-4 rounded-xl font-semibold hover:bg-neutral-100 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/25 hover:scale-[1.02] active:scale-[0.98]"
+          <button
+            type="button"
+            onClick={open}
+            className="group inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-8 py-4 rounded-xl font-semibold hover:bg-neutral-100 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/25 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
           >
             {buttonLabel}
             <ArrowRight className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5" />
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

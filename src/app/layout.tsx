@@ -16,9 +16,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Santu Solutions | Solutions technologiques pour les entreprises",
+  title: "Santu Engineering | Solutions technologiques pour les entreprises",
   description:
-    "ESN et cabinet technologique : Cloud & DevOps, développement web & mobile, conseil, formation et solutions numériques sur mesure pour entreprises et institutions.",
+    "Santu Engineering est un cabinet technologique : Cloud & DevOps, développement web & mobile, conseil, formation et solutions numériques sur mesure pour entreprises et institutions.",
 };
 
 export default function RootLayout({

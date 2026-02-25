@@ -16,13 +16,14 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] font-bold tracking-tight leading-[1.05] mb-6">
-              Solutions tech 
-                <span className="block text-white">pour les entreprises</span>
+              <h1 className="text-[1rem] sm:text-[1.5rem] lg:text-[2rem] font-bold tracking-tight leading-[1.05] mb-6">
+              Votre partenaire technique
+                <span className="block text-white">pour vos projets d'apps web et mobile</span>
               </h1>
 
               <p className="text-base sm:text-lg text-neutral-400 leading-relaxed mb-10 max-w-xl">
-              Nous accompagnons les entreprises et les startups dans la conception, le développement et l’évolution de leurs projets numériques : cloud, développement, conseil et formation.              </p>
+                Nous accompagnons les entreprises et les startups dans la conception, le développement et l’évolution de leurs projets numériques : développement d'applications web et mobile, cloud, conseil et formation.              
+              </p>
 
               <div className="mb-12">
                 <CallToAction
@@ -40,7 +41,7 @@ export default function HeroSection() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-neutral-400">
                   <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="text-sm">5+ domaines d'expertise technique</span>
+                  <span className="text-sm">Plusieurs domaines d'expertise technique</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-400">
                   <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" />
@@ -48,7 +49,7 @@ export default function HeroSection() {
                 </div>
                 <div className="flex items-center gap-3 text-neutral-400">
                   <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0" />
-                  <span className="text-sm">Méthodologies modernes (Agile, DevOps)</span>
+                  <span className="text-sm">Méthodologies modernes (Agile, Cloud, DevOps)</span>
                 </div>
               </div>
             </motion.div>
@@ -77,6 +78,15 @@ export default function HeroSection() {
               <div className="p-8 space-y-6">
                 {/* Feature cards */}
                 <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-neutral-800/50 border border-neutral-700">
+                    <div className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center flex-shrink-0">
+                      <Smartphone className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white mb-1">Web & Mobile</h3>
+                      <p className="text-sm text-neutral-400">Applications modernes et performantes</p>
+                    </div>
+                  </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-neutral-800/50 border border-neutral-700">
                     <div className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center flex-shrink-0">
                       <Cloud className="w-5 h-5 text-purple-400" />
@@ -84,16 +94,6 @@ export default function HeroSection() {
                     <div>
                       <h3 className="font-semibold text-white mb-1">Cloud & DevOps</h3>
                       <p className="text-sm text-neutral-400">Infrastructure scalable et automatisée</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-neutral-800/50 border border-neutral-700">
-                    <div className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center flex-shrink-0">
-                      <Smartphone className="w-5 h-5 text-blue-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-white mb-1">Web & Mobile</h3>
-                      <p className="text-sm text-neutral-400">Applications modernes et performantes</p>
                     </div>
                   </div>
 
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-neutral-800">
+                {/* <div className="grid grid-cols-3 gap-4 pt-4 border-t border-neutral-800">
                   <div>
                     <p className="text-2xl font-bold text-white">5+</p>
                     <p className="text-xs text-neutral-500">Expertises</p>
@@ -122,7 +122,7 @@ export default function HeroSection() {
                     <p className="text-2xl font-bold text-white">Agile</p>
                     <p className="text-xs text-neutral-500">Méthodo</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
